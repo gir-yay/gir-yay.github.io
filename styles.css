@@ -1,0 +1,137 @@
+/* Load local fonts added to the repository */
+@font-face {
+  font-family: 'JenThill';
+  src: url('fonts/jenthill.woff2') format('woff2'),
+       url('fonts/jenthill.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mosk';
+  src: url('fonts/mosk-600.woff2') format('woff2'),
+       url('fonts/mosk-600.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mosk9';
+  src: url('fonts/mosk-900.woff2') format('woff2'),
+       url('fonts/mosk-900.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  /* use the provided Mosk font for UI text, fallback to system sans */
+  font-family: 'Mosk', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* headings use JenThill for a more distinctive story look */
+h1, h2, h3, h4, h5 {
+  font-family: 'Mosk9', system-ui, sans-serif;
+  margin: 0;
+}
+
+span {
+  font-family: 'JenThill', 'Mosk', system-ui, sans-serif;
+}
+
+.menu a:hover {
+  color: #00aaff;
+}
+
+.socials .icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 1rem;
+  transition: transform 0.3s;
+}
+
+.socials .icon:hover {
+  transform: scale(1.1);
+}
+
+/* Make footer stick to bottom on short pages, and follow content on long pages */
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main, #content {
+  /* take remaining space so footer stays at bottom */
+  flex: 1 0 auto;
+}
+.site-footer{
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  text-align: center;
+}
+
+#about, #education, #extra, #projects, #exp{
+  padding: 4rem 2rem;
+  height: 700px;
+}
+
+footer {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  height: 500px;
+}
+
+.fx{
+  display: flex;
+}
+
+.ins{
+  width: 50%  ;
+}
+
+#education {
+  background-color: black;
+}
+
+.ins2{
+  width: 50%  ;
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
