@@ -28,7 +28,6 @@
 
 body {
   margin: 0;
-  /* use the provided Mosk font for UI text, fallback to system sans */
   font-family: 'Mosk', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   background-color: #f9f9f9;
 }
@@ -59,7 +58,6 @@ body {
   transition: color 0.3s;
 }
 
-/* headings use JenThill for a more distinctive story look */
 h1, h2, h3, h4, h5 {
   font-family: 'Mosk9', system-ui, sans-serif;
   margin: 0;
@@ -84,7 +82,6 @@ span {
   transform: scale(1.1);
 }
 
-/* Make footer stick to bottom on short pages, and follow content on long pages */
 html, body {
   height: 100%;
 }
@@ -94,9 +91,9 @@ body {
   min-height: 100vh;
 }
 main, #content {
-  /* take remaining space so footer stays at bottom */
   flex: 1 0 auto;
 }
+
 .site-footer{
   background-color: #000;
   color: #fff;
@@ -117,21 +114,5 @@ footer {
 }
 
 .fx{
-  display: flex;
 }
 
-.ins{
-  width: 50%  ;
-}
-
-#education {
-  background-color: black;
-}
-
-.ins2{
-  width: 50%  ;
-  background-color: black;
-  color: white;
-  margin: 20px;
-  padding: 20px;
-}
