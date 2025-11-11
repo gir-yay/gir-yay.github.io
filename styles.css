@@ -33,21 +33,26 @@ body {
 }
 
 .navbar {
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #000;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+
 }
 
 .menu {
   list-style: none;
   display: flex;
   gap: 2rem;
-  margin: 0;
+  margin-left: 5%;
   padding: 0;
 }
 
