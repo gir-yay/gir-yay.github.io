@@ -32,6 +32,11 @@ body {
   background-color: #FCE9F1;
 }
 
+main {
+  padding: 0;
+  margin: 0;
+}
+
 .navbar {
 
   position: fixed;
@@ -43,7 +48,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding-right: 1rem;
   background-color: #000;
 
 }
@@ -61,11 +66,13 @@ body {
   color: #F1D4E5;
   font-weight: 500;
   transition: color 0.3s;
+  font-size: 0.8rem;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Mosk9', system-ui, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 span {
@@ -93,7 +100,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 150vh;
 }
 main, #content {
   flex: 1 0 auto;
@@ -106,10 +113,7 @@ main, #content {
   text-align: center;
 }
 
-#about, #education, #extra, #projects, #exp{
-  padding: 4rem 2rem;
-  height: 700px;
-}
+
 
 footer {
   color: #F1D4E5;
@@ -124,17 +128,144 @@ footer {
 }
 
 
+.intro {
+width: 70% ;
+
+padding-top: 5rem;
+padding-left: 5rem;
+
+}
+
+.h{
+  padding: 1rem;
+}
+
+
 #about {
   background-color: #73BBC9;
+  text-align: center;
+  display: flex;
+  padding: 6rem 0rem 0rem 0rem;
+  height: 60vh;
+  margin: 0;
 
 }
 
-#education {
-  background-color: #F1D4E5;
-}
 
-#exp #projects {
+
+
+#exp {
     background-color: #FCE9F1;
+    padding: 4rem 2rem;
+
+}
+
+#projects {
+  background-color: #FCE9F1;
+  padding: 4rem 2rem;
+}
+
+
+
+.horizontal-scroll-container {
+  background-color: #F1D4E5;
+  height: 115vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+  margin: 0;
+
+  /* Hide scrollbar but keep scrollable */
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE and Edge */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari */
+}
+
+.horizontal-scroll-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;      /* Optional: makes horizontal scrolling smoother */
+}
+
+.scroll-item {
+  flex: 0 0 400px;
+  min-width: 70vw;
+  height: 90vh;
+  background:  #F1D4E5;
+  border-radius: 8px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+
+.horizontal-scroll-container {
+  scroll-snap-type: x mandatory;
+}
+.scroll-item {
+  scroll-snap-align: start;
+}
+
+
+.image {
+  padding: 1rem;
+  margin: auto;
+}
+
+.txt {
+  width: 50%;
+  padding: 15px;
+  margin: auto;
+}
+
+
+.styled-paragraph {
+  line-height: 2;        /* increases space between lines */
+  padding: 1rem;           /* adds space inside the paragraph box */
+  font-size: 1.2rem;         /* optional: makes text more legible */
+  color: #333;             /* adjusts text color for better contrast */
+  margin: 0rem;            /* centers it if inside a wide container */
+  text-align: justify;
+
+}
+
+
+.image-group {
+  display: flex;
+  flex-direction: column;        /* stack images vertically */
+  gap: 20px;                     /* space between images */
+}
+
+.tilted-img {
+  height: 30vh;                 /* adjust as needed */
+  object-fit: cover;
+  transform: rotate(-7deg);      /* tilt the images */
+  border-radius: 10px;           /* optional rounded corners */
+  box-shadow: 0 10px 15px rgba(0,0,0,0.2); /* subtle shadow */
+  margin-right: 1rem;
+  padding-right: 1 rem;
+}
+
+
+.styled-paragraph-v2 {
+  line-height: 2;        /* increases space between lines */
+  padding: 1rem;           /* adds space inside the paragraph box */
+  font-size: 1.2rem;         /* optional: makes text more legible */
+  color: #333;             /* adjusts text color for better contrast */
+  max-width: 550px;        /* keeps long text blocks comfortable to read */
+  margin: 2rem;            /* centers it if inside a wide container */
+  text-align: justify;
 
 }
 
