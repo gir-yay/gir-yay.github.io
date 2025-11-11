@@ -269,3 +269,190 @@ padding-left: 5rem;
 
 }
 
+
+
+/* ====================== */
+/*   MEDIA QUERIES        */
+/* ====================== */
+
+/* Medium screens: tablets (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 1rem;
+   
+  }
+
+  .menu {
+    gap: 1rem;
+     margin-left: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .scroll-item {
+    flex-direction: column;
+    min-width: 90vw;
+    height: auto;
+    padding: 0rem 0rem;
+  }
+
+  .image-group {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tilted-img {
+    height: 25vh;
+    transform: rotate(0deg);
+  }
+
+
+  .txt {
+    width: 70%;
+    padding: 0rem;
+  }
+
+  .styled-paragraph, .styled-paragraph-v2 {
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 4rem 1rem;
+  }
+
+  .intro {
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+
+  
+
+  .image > img {
+    height: auto;
+    max-width: 70%;
+    
+  }
+
+  .image {
+    padding-left: 10rem;
+  }
+
+
+}
+
+
+/* Small screens: phones (≤ 600px) */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  .arr{
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .socials {
+    margin-top: 0.5rem;
+  }
+
+  .profile-pic {
+    display: none;
+  }
+
+  .intro {
+    margin-top: 7rem;
+  }
+
+  .horizontal-scroll-content{
+    padding: 0;
+  }
+
+  .scroll-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    height: auto;
+    padding: 0rem;
+    margin: 0;
+  }
+
+  .image-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tilted-img {
+    height: 200px;
+    transform: rotate(-3deg);
+  }
+
+  .styled-paragraph{
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+
+  .styled-paragraph-v2 {
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 0.75rem;
+    margin: 1rem;
+    width: 80%;
+  }
+
+
+  footer {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .rights {
+    font-size: 0.9rem;
+  }
+
+
+  
+  .txt {
+    width: 70%;
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  
+
+  .image > img {
+    height: auto;
+    max-width: 90%;
+    
+    margin-left: 2rem;
+    
+  }
+
+  .image {
+    margin: 0 1rem;
+    padding: 0rem;
+  }
+}
+
