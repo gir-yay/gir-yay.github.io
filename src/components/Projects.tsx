@@ -12,7 +12,7 @@ const Projects = () => {
       repo: "https://github.com/gir-yay/mini-do-autoscaler",
     },
     {
-      title: "CDeveloped a FastAPI Odoo Instance Manager",
+      title: "Developed a FastAPI Odoo Instance Manager",
       description: "Developed an API that allows users to request Odoo instances. The instances runs on a self-managed Kubernetes cluster.",
       tech: ["FastAPI", "Kubertnetes", "PostgreSQL"],
       impact: "90% faster deployments",
